@@ -32,3 +32,6 @@ tmp
 .rvmrc
 .idea/
 .history/
+
+docs
+vendor

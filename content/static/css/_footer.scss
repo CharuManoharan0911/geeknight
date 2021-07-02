@@ -11,13 +11,15 @@
 	a {
 		text-decoration: none;
 		color: $white;
+		padding-top:0.25em;
 	}
 
 	.logo-section {
 		display: flex;
 		flex: 1 1 50%;
-		justify-content: center;
+		justify-content: flex-end;
 		margin-top: 10px;
+		padding-right: 1em;
 		.sponsored-by {
 			color: $white;
 			font-size: 14px;
@@ -29,7 +31,15 @@
 			height: 35px;
 			width: 140px;
 			margin-left: 5px;
-			margin-top: 3px;
 		}
+	}
+
+	.feedback-section {
+		font-size: 14px;
+		font-weight: 100;
+		padding-left: 1em;
+		display: flex;
+		flex: 1 1 50%;
+		justify-content: flex-start;
 	}
 }
