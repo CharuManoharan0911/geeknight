@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build Test
 
 # Controls when the workflow will run
 on:
@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   
-  Build:
+  build:
     runs-on: ubuntu-latest
     name: Build with ruby
     steps: 
@@ -27,10 +27,6 @@ jobs:
           with:
             bundler-cache: true
             working-directory: .
-            
-
-#         - name: Downlaod nanoc
-#           run: gem install nanoc
           
         - name: Compile 
           run: bundle exec nanoc
