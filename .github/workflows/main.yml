@@ -35,8 +35,8 @@ jobs:
       - name: Compile 
         run: bundle exec nanoc
       - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      with:
-        branch: main # The branch the action should deploy to.
-        folder: docs # The folder the action should deploy.
-        target-folder : ./docs
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: main # The branch the action should deploy to.
+          folder: docs # The folder the action should deploy.
+          target-folder : ./docs
