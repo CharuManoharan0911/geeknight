@@ -514,12 +514,14 @@ html {
   align-items: center; }
   .footer a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    padding-top: 0.25em; }
   .footer .logo-section {
     display: flex;
     flex: 1 1 50%;
-    justify-content: center;
-    margin-top: 10px; }
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 1em; }
     .footer .logo-section .sponsored-by {
       color: #fff;
       font-size: 14px;
@@ -529,5 +531,11 @@ html {
       background-size: 140px;
       height: 35px;
       width: 140px;
-      margin-left: 5px;
-      margin-top: 3px; }
+      margin-left: 5px; }
+  .footer .feedback-section {
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 1em;
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: flex-start; }
