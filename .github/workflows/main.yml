@@ -43,5 +43,4 @@ jobs:
         with:
           name: archive-latest-html
           path: |
-            ARCHIVE_FILE = content/$(ls -ltr|grep '.html$' | tail -1)
-            echo '$(ARCHIVE_FILE)'
+            content/$(ls -ltr|grep '.html$' | tail -1)
