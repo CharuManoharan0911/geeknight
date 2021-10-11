@@ -47,4 +47,4 @@ jobs:
         with:
           name: archive-latest-html
           path: |
-          find content -name "*.html"|sort| tail -1
+            find content -name "*.html"|sort| tail -1
