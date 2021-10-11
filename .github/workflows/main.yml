@@ -48,3 +48,8 @@ jobs:
           name: archive-latest-html
           path: |
             ${{env.FOO}}
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: ${{env.FOO}}
+          target: /content/archives/
