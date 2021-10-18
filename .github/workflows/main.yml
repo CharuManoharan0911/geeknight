@@ -37,19 +37,14 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: docs # The folder the action should deploy.
-          # target-folder: ./docs
-      - name: Set the value
-        id: step_one
-        run: |
-          echo "FOO=$(find content -name "*.html"|sort| tail -1)" >> $GITHUB_ENV
+            # target-folder: ./docs
+            #      - name: Set the value
+            #        id: step_one
+            #        run: |
+            #          echo "FOO=$(find content -name "*.html"|sort| tail -1)" >> $GITHUB_ENV
       - name: Archive the latest html
         uses: actions/upload-artifact@v2
         with:
           name: archive-latest-html
           path: |
-            ${{env.FOO}}
-      - name: copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: ${{env.FOO}}
-          target: /content/archives/
+            find content -name "*.html"|sort| tail -1
